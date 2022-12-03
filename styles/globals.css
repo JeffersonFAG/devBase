@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+.header-home-back {
+  @apply bg-black h-20 w-full flex-col items-center text-white font-robo font-bold xsm:text-[18px] pt-[26px] text-lg;
+}
+
+.header-home {
+  @apply bg-black h-20 w-full flex justify-center items-center text-white font-robo font-bold text-lg;
+}
+.btn-user {
+  @apply flex justify-center items-center w-40 h-14 mt-2 mr-[0.5rem] rounded-m bg-blue-84 hover:bg-blue-85 cursor-pointer text-white font-medium;
+}
+
 .text-aling {
   @apply mt-4 ml-16 font-robo font-normal;
 }

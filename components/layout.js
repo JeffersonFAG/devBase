@@ -11,16 +11,14 @@ export default function Layout({ children, btnBack }) {
       </Head>
 
       {btnBack ? (
-        <div className="bg-black h-20 w-full flex-col items-center text-white font-robo font-bold xsm:text-[18px] pt-[26px] text-lg ">
+        <div className="header-home-back ">
           <div className="flex absolute pr-[5.5rem] ml-24">
             <BtnBack />
           </div>
           <div className="flex justify-center">Home</div>
         </div>
       ) : (
-        <div className="bg-black h-20 w-full flex justify-center items-center text-white font-robo font-bold text-lg ">
-          Home
-        </div>
+        <div className="header-home">Home</div>
       )}
 
       <div className="font-robo">{children}</div>
