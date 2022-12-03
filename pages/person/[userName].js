@@ -1,6 +1,6 @@
 import Layout from "../../components/layout";
 import { useRouter } from "next/router";
-import RenderUsers from "../../components/renderUsers";
+import User from "../../components/user";
 
 export default function Person() {
   //* Route /user/[userName]
@@ -9,7 +9,7 @@ export default function Person() {
 
   return (
     <Layout btnBack={true}>
-      <RenderUsers userName={userName} />
+      <User userName={userName} />
     </Layout>
   );
 }
